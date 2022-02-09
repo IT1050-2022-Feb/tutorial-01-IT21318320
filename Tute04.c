@@ -6,6 +6,11 @@ Do not change the code given in the main() function when you are implementing yo
 
 #include <stdio.h>
 
+// Declaring function prototype.
+int minimum(int no1, int no2);
+int maximum(int no1, int no2);
+int multiply(int no1, int no2);
+
 int main() {
    int no1, no2;
    printf("Enter a value for no 1 : ");
@@ -16,4 +21,36 @@ int main() {
    printf("%d ", maximum(no1, no2));
    printf("%d ", multiply(no1, no2));
    return 0;
+}
+
+int minimum(int no1, int no2)
+{
+  // Selecting and returning the smallest number.
+  if(no1 < no2)
+  {
+    return no1;
+  }
+  else
+  {
+    return no2;
+  }
+}
+
+int maximum(int no1, int no2)
+{
+  // Selecting and returning the largest number.
+  if(no1 > no2)
+  {
+    return no1;
+  }
+  else
+  {
+    return no2;
+  }
+}
+
+int multiply(int no1, int no2)
+{
+  // Calculating and returning the product of two numbers.
+  return no1 * no2;
 }
